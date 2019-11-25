@@ -3,3 +3,81 @@ html {
   color: #6feff9;
   font-family: "Ubuntu Mono", monospace;
 }
+
+.icon-glow {
+  filter: drop-shadow(1px 1px 3px #6feff9);
+  color: #6feff9;
+}
+
+.btn {
+  color: #6feff9;
+}
+
+.icon-glow:hover {
+  color: #fff;
+}
+
+.tv-animation {
+  animation: tv-a .3s linear infinite;
+}
+
+@keyframes tv-a {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .6;
+  }
+
+  100% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: .8;
+  }
+
+  0% {
+    opacity: 1;
+  }
+
+}
+
+.state-bar {
+  color: #ffd31d;
+}
+
+.dashline {
+  border-bottom: 1px dotted currentColor;
+  border-left: 1px dotted currentColor;
+}
+
+.dashline-l {
+  border-left: 1px dotted currentColor;
+}
+
+.dashline-top {
+  border-top: 1px dotted currentColor;
+}
+
+.alert {
+  animation: alerter 1s linear alternate infinite;
+  transform-origin: 668px 1342px;
+  filter: drop-shadow(.1em .1em .3em #f62e52);
+}
+
+@keyframes alerter {
+
+  0% {
+    opacity: .7;
+    transform: scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
